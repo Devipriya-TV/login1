@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login / Signup Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Left Side: Image or Slideshow -->
+    <div class="left">
+      <div class="slideshow">
+        <img src="./22.avif" alt="Feature 1" class="slide active">
+        <img src="./33.jpg" alt="Feature 2" class="slide">
+        <img src="./3.jpeg" alt="Feature 3" class="slide">
+      </div>
+    </div>
+
+    <!-- Right Side: Form Section -->
+    <div class="right">
+      <div class="form-container">
+        <h2 id="form-title">Login</h2>
+        <p id="form-subtitle">Please enter your details to log in</p>
+
+        <div class="toggle">
+          <button onclick="toggleForm('login')" id="login-btn" class="active">Login</button>
+          <button onclick="toggleForm('signup')" id="signup-btn">Sign Up</button>
+        </div>
+
+        <!-- Login Form -->
+        <form id="login-form">
+          <input type="email" placeholder="Enter your email" required>
+          <input type="password" placeholder="Enter your password" required>
+          <button type="submit" class="form-btn">Login</button>
+        </form>
+
+        <!-- Signup Form -->
+        <form id="signup-form" style="display: none;">
+          <input type="text" placeholder="Enter your username" required>
+          <input type="email" placeholder="Enter your email" required>
+          <input type="password" placeholder="Create a password" required>
+          <button type="submit" class="form-btn">Sign Up</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
